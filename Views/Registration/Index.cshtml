@@ -1,0 +1,33 @@
+﻿@using BooksNotBoobs.DTOs
+@model NewUser
+
+<div class="registrContent d-flex justify-content-between align-items-center ">
+
+    <img class="bookImg" src="~/img/cute-cat-border.png" alt="Alternate Text" />
+
+    <form class="registrForm d-flex flex-column align-items-center" asp-area="" asp-action="CheckRegistrForm" asp-controller="Registration" method="post">
+        <div asp-validation-summary="ModelOnly"></div>
+        <div class="mb-3 d-flex flex-column">
+            <span class="text-danger" asp-validation-for="UserName"></span>
+            <input asp-for="UserName" class="registrInput" type="text" value="" placeholder="Name" />
+        </div>
+
+        <div class="mb-3 d-flex flex-column">
+            <span class="text-danger" asp-validation-for="UserEmail"></span>
+            <input asp-for="UserEmail" class="registrInput" type="email" value="" placeholder="Email" />
+        </div>
+
+        <div class="mb-3 d-flex flex-column">
+            <span class="text-danger" asp-validation-for="Password"></span>
+            <input asp-for="Password" class="registrInput" type="password" value="" placeholder="Password" />
+        </div>
+
+        <div class="mb-3 d-flex flex-column">
+            <span class="text-danger" asp-validation-for="ConfirmPassword"></span>
+            <input asp-for="ConfirmPassword" class="registrInput" type="password" value="" placeholder="ConfirmPassword" />
+        </div>
+
+        <button type="submit" class="registrButton">Отправить</button>
+    </form>
+</div>
+

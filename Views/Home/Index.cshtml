@@ -1,0 +1,41 @@
+﻿<div class="homeContent">
+    <div class="helloBar text-center">
+        @if (User.Identity.IsAuthenticated) 
+        {
+            <h1>Hello: @User.Identity.Name</h1>
+        }
+        else
+        {
+            <h1>Hello</h1>
+        }
+
+        <h2>Welcome to BnotB</h2>
+    </div>
+    <div class="infoBar d-flex justify-content-between align-items-center">
+        <div class="d-flex flex-column InfoSideBar">
+            <h4 class="infoLabel">About Us</h4>
+            <div class="textInfo">
+                <p>
+                    Exploring new skills can be both challenging and rewarding.<br />
+                    As you practice, your confidence grows, and what once seemed complex starts to feel achievable.<br />
+                    Every step forward is a small victory, building toward greater goals
+                </p>
+            </div>
+        </div>
+        <div class="catAnimation">
+            <span id="meow">Мяу ня!</span>
+            <img id="cat" class="bookImg" src="~/img/result_infoBook.png" alt="Alternate Text" />
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById("cat").addEventListener("click", function() {
+        var meowText = document.getElementById("meow");
+        meowText.classList.add("show");
+
+        setTimeout(function() {
+            meowText.classList.remove("show");
+        }, 1000); // Через 1 секунду скрываем текст
+    });
+</script>

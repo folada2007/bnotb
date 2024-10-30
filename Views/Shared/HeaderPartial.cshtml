@@ -1,0 +1,40 @@
+﻿<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container-fluid justify-content-between mainContent">
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">BooksNotBoobs</a>
+
+            <div class="navItem d-flex">
+                <a class="d-none d-sm-block" asp-action="Index" asp-controller="Registration">
+                    <img src="~/img/Enter.png" alt="Alternate Text" />
+                </a>
+                <a class="d-none d-sm-block" asp-action="Index" asp-controller="Login">
+                    <img src="~/img/twitter.png" alt="Alternate Text" />
+                </a>
+                <a class="d-none d-sm-block" asp-action="Index" asp-controller="Home">
+                    <img src="~/img/xray.png" alt="Alternate Text" />
+                </a>
+            </div>
+
+            <div class="collapse d-sm-none" id="navbarToggleExternalContent">
+                <div class="p-4">
+                    <a asp-action="Index" asp-controller="Registration">
+                        <img src="~/img/Enter.png" alt="Alternate Text" />
+                    </a>
+                    <a asp-action="Index" asp-controller="Login">
+                        <img src="~/img/twitter.png" alt="Alternate Text" />
+                    </a>
+                    <a asp-action="Index" asp-controller="Home">
+                        <img src="~/img/xray.png" alt="Alternate Text" />
+                    </a>
+                </div>
+            </div>
+            <nav class="navbar sideButton">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </nav>
+</header>
