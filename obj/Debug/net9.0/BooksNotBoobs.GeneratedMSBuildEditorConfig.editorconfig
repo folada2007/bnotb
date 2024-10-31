@@ -20,6 +20,14 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/Users/ASUS/source/repos/BooksNotBoobs/BooksNotBoobs/Views/Bookshelf/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NoZWxmXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/source/repos/BooksNotBoobs/BooksNotBoobs/Views/Bookshelf/SetBooks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NoZWxmXFNldEJvb2tzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ASUS/source/repos/BooksNotBoobs/BooksNotBoobs/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -30,6 +38,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/ASUS/source/repos/BooksNotBoobs/BooksNotBoobs/Views/Registration/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cmF0aW9uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/source/repos/BooksNotBoobs/BooksNotBoobs/Views/Shared/AddBookFormPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkZEJvb2tGb3JtUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ASUS/source/repos/BooksNotBoobs/BooksNotBoobs/Views/Shared/FooterPartial.cshtml]

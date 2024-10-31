@@ -1,0 +1,16 @@
+﻿@using BooksNotBoobs.Controllers
+@using BooksNotBoobs.Domain.Entities
+@model List<Book>
+
+
+<div class="collection-content">
+
+    @foreach (var item in Model) 
+    {
+        <div class="bookadd">
+            <p>@item.BookName</p>
+        </div>
+    }
+    
+    <a asp-action="SetBooks" asp-controller="Bookshelf">Add Book</a>
+</div>

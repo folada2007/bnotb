@@ -11,5 +11,7 @@ namespace BooksNotBoobs.Data
         {
 
         }
+
+        public DbSet<Book> Books { get; set; }
     }
 }

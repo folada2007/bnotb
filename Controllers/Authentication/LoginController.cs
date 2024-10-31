@@ -34,5 +34,12 @@ namespace BooksNotBoobs.Controllers.Authentication
             }
             return View("Index");
         }
+
+        public IActionResult LogOut() 
+        {
+            _authService.SignOutAsync();
+            return RedirectToAction("Index","Home");
+        }
+
     }
 }

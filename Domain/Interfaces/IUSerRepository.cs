@@ -9,6 +9,5 @@ namespace BooksNotBoobs.Domain.Interfaces
         Task DeleteUserAsync(string id);
         Task<User> GetUserByIdAsync(string id);
         Task<User> GetUserByMailAsync(string mail);
-
     }
 }

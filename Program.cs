@@ -9,6 +9,9 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<IBookFactory,BookFactory>();
+builder.Services.AddScoped<IBookRepository, BookRepository>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddAuthorization();
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
