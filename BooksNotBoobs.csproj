@@ -24,9 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\Repo\" />
-    <Folder Include="Enums\" />
-    <Folder Include="Interfaces\" />
+    <Folder Include="Factory\" />
   </ItemGroup>
 
 </Project>

@@ -40,8 +40,9 @@ namespace BooksNotBoobs.Controllers.Bookshelf
 
         public async Task<IActionResult> Index() 
         {
-            var result = await _bookRepository.GetAlBookAsync();
-            return View(result);
+            var AllBook = await _bookRepository.GetAlBookAsync();
+
+            return View(AllBook);
         }
 
     }

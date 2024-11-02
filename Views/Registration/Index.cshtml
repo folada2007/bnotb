@@ -1,33 +1,39 @@
 ﻿@using BooksNotBoobs.DTOs
 @model NewUser
 
-<div class="registrContent d-flex justify-content-between align-items-center ">
+<div class="registrContent d-flex justify-content-between align-items-center flex-wrap">
 
     <img class="bookImg" src="~/img/cute-cat-border.png" alt="Alternate Text" />
 
-    <form class="registrForm d-flex flex-column align-items-center" asp-area="" asp-action="CheckRegistrForm" asp-controller="Registration" method="post">
+    <div class="registrForm d-flex align-items-center">
+        <form asp-action="CheckRegistrForm" asp-controller="Registration" asp-area="" method="post">
+
+            <h1 class="text-center">Registration</h1>
+
         <div asp-validation-summary="ModelOnly"></div>
-        <div class="mb-3 d-flex flex-column">
+        <div>
             <span class="text-danger" asp-validation-for="UserName"></span>
-            <input asp-for="UserName" class="registrInput" type="text" value="" placeholder="Name" />
+                <input class="RegInput" asp-for="UserName" type="text" placeholder="User Name" />
         </div>
 
-        <div class="mb-3 d-flex flex-column">
+        <div>
             <span class="text-danger" asp-validation-for="UserEmail"></span>
-            <input asp-for="UserEmail" class="registrInput" type="email" value="" placeholder="Email" />
+                <input class="RegInput" asp-for="UserEmail" type="text" placeholder="Email" />
         </div>
 
-        <div class="mb-3 d-flex flex-column">
+        <div>
             <span class="text-danger" asp-validation-for="Password"></span>
-            <input asp-for="Password" class="registrInput" type="password" value="" placeholder="Password" />
+                <input class="RegInput" asp-for="Password" type="password" placeholder="Password" />
         </div>
 
-        <div class="mb-3 d-flex flex-column">
+         <div>
             <span class="text-danger" asp-validation-for="ConfirmPassword"></span>
-            <input asp-for="ConfirmPassword" class="registrInput" type="password" value="" placeholder="ConfirmPassword" />
+                <input class="RegInput" asp-for="ConfirmPassword" type="password" placeholder="Confirm Password" />
         </div>
 
-        <button type="submit" class="registrButton">Отправить</button>
-    </form>
+            <button class="registrButton">push</button>
+        </form>
+    </div>
+    
 </div>
 

@@ -13,6 +13,22 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\img\\1st-book.jpg",
+      "PackagePath": "staticwebassets\\img\\1st-book.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\img\\2nd-book.jpg",
+      "PackagePath": "staticwebassets\\img\\2nd-book.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\img\\3th-book.jpg",
+      "PackagePath": "staticwebassets\\img\\3th-book.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\img\\6884840.jpg",
+      "PackagePath": "staticwebassets\\img\\6884840.jpg"
+    },
+    {
       "Id": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\img\\Enter.png",
       "PackagePath": "staticwebassets\\img\\Enter.png"
     },

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "a8b8Z3Zyx4BOBlb7B0rpMwAxm2C4ninft9uCv0W723g=",
+  "Hash": "gK/lUOezD4QZPl6NpHk0tCJLAivB3Efq15kyDEg0VsQ=",
   "Source": "BooksNotBoobs",
   "BasePath": "_content/BooksNotBoobs",
   "Mode": "Default",
@@ -458,12 +458,12 @@
       "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\obj\\Debug\\net9.0\\compressed\\clo478q587-4a2voe3zqh.gz",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\obj\\Debug\\net9.0\\compressed\\clo478q587-tlyw148y2o.gz",
       "SourceId": "BooksNotBoobs",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/BooksNotBoobs",
-      "RelativePath": "css/site#[.{fingerprint=4a2voe3zqh}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=tlyw148y2o}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -472,8 +472,8 @@
       "RelatedAsset": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "8i7kocnfi8",
-      "Integrity": "AKVo8eROXTanCu+c2rS8YFZwC1K4x+glSJUa1XjB5Ho=",
+      "Fingerprint": "w769c7fq5a",
+      "Integrity": "RAAa1QIZgvn5bnMtXiKb7Q7qyunv7Epd05heByLotOk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\css\\site.css"
@@ -1417,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "4a2voe3zqh",
-      "Integrity": "tOJP/xSQy3LAzAxgx+RbuOXG8ZbD/uPHFao6ksXP28o=",
+      "Fingerprint": "tlyw148y2o",
+      "Integrity": "MahqEq3cni4P7Jel3Us+lt/dnAgORvN1RxdgsD7cemY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -1443,6 +1443,90 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\img\\1st-book.jpg",
+      "SourceId": "BooksNotBoobs",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\",
+      "BasePath": "_content/BooksNotBoobs",
+      "RelativePath": "img/1st-book#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s934c9c2md",
+      "Integrity": "cIa+4dEnIrv3iT1bSmGD/V67akmqk/st/pu1QFaljnY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\1st-book.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\img\\2nd-book.jpg",
+      "SourceId": "BooksNotBoobs",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\",
+      "BasePath": "_content/BooksNotBoobs",
+      "RelativePath": "img/2nd-book#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lp83fjyoq8",
+      "Integrity": "2Qkd8ne/yKxpLQVTSo5C5Ir/cmOCyY6RqNqAibk03WM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\2nd-book.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\img\\3th-book.jpg",
+      "SourceId": "BooksNotBoobs",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\",
+      "BasePath": "_content/BooksNotBoobs",
+      "RelativePath": "img/3th-book#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6br96p4nua",
+      "Integrity": "fkN7BcYGzpTc92Nt/jaElAgKIF5yk6il5RosTU0G3RA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\3th-book.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\img\\6884840.jpg",
+      "SourceId": "BooksNotBoobs",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\",
+      "BasePath": "_content/BooksNotBoobs",
+      "RelativePath": "img/6884840#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0nq04mbd27",
+      "Integrity": "JO1RTyxZVuLXzlEu2FT36VsYdgfbHhAq1a9q6Omq7Ng=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\6884840.jpg"
     },
     {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\img\\cute-cat-border.png",
@@ -2857,7 +2941,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Oct 2024 11:34:17 GMT"
+          "Value": "Sat, 02 Nov 2024 12:53:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2918,7 +3002,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Oct 2024 11:34:17 GMT"
+          "Value": "Sat, 02 Nov 2024 12:53:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2963,7 +3047,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Oct 2024 11:34:17 GMT"
+          "Value": "Sat, 02 Nov 2024 12:53:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3018,7 +3102,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Oct 2024 11:34:17 GMT"
+          "Value": "Sat, 02 Nov 2024 12:53:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3079,7 +3163,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Oct 2024 11:34:17 GMT"
+          "Value": "Sat, 02 Nov 2024 12:53:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3124,7 +3208,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Oct 2024 11:34:17 GMT"
+          "Value": "Sat, 02 Nov 2024 12:53:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3179,7 +3263,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Oct 2024 11:34:17 GMT"
+          "Value": "Sat, 02 Nov 2024 12:53:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3232,7 +3316,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Oct 2024 11:34:17 GMT"
+          "Value": "Sat, 02 Nov 2024 12:53:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3269,7 +3353,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Oct 2024 11:34:17 GMT"
+          "Value": "Sat, 02 Nov 2024 12:53:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3316,7 +3400,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Oct 2024 11:34:17 GMT"
+          "Value": "Sat, 02 Nov 2024 12:53:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3369,7 +3453,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Oct 2024 11:34:17 GMT"
+          "Value": "Sat, 02 Nov 2024 12:53:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3406,7 +3490,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Oct 2024 11:34:17 GMT"
+          "Value": "Sat, 02 Nov 2024 12:53:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3429,13 +3513,13 @@
       ]
     },
     {
-      "Route": "css/site.4a2voe3zqh.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\obj\\Debug\\net9.0\\compressed\\clo478q587-4a2voe3zqh.gz",
+      "Route": "css/site.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\obj\\Debug\\net9.0\\compressed\\clo478q587-tlyw148y2o.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0,000789265983"
+          "Quality": "0,000740192450"
         }
       ],
       "ResponseHeaders": [
@@ -3445,19 +3529,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1266"
+          "Value": "1350"
         },
         {
           "Name": "ETag",
-          "Value": "\"AKVo8eROXTanCu+c2rS8YFZwC1K4x+glSJUa1XjB5Ho=\""
+          "Value": "\"RAAa1QIZgvn5bnMtXiKb7Q7qyunv7Epd05heByLotOk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Oct 2024 11:41:00 GMT"
+          "Value": "Sat, 02 Nov 2024 13:35:53 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -3473,26 +3557,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"tOJP/xSQy3LAzAxgx+RbuOXG8ZbD/uPHFao6ksXP28o=\""
+          "Value": "W/\"MahqEq3cni4P7Jel3Us+lt/dnAgORvN1RxdgsD7cemY=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "4a2voe3zqh"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-tOJP/xSQy3LAzAxgx+RbuOXG8ZbD/uPHFao6ksXP28o="
+          "Value": "sha256-MahqEq3cni4P7Jel3Us+lt/dnAgORvN1RxdgsD7cemY="
         }
       ]
     },
     {
-      "Route": "css/site.4a2voe3zqh.css",
+      "Route": "css/site.css",
       "AssetFile": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3502,7 +3578,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4013"
+          "Value": "5794"
         },
         {
           "Name": "Content-Type",
@@ -3510,11 +3586,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"tOJP/xSQy3LAzAxgx+RbuOXG8ZbD/uPHFao6ksXP28o=\""
+          "Value": "\"MahqEq3cni4P7Jel3Us+lt/dnAgORvN1RxdgsD7cemY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Oct 2024 11:41:00 GMT"
+          "Value": "Sat, 02 Nov 2024 13:35:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MahqEq3cni4P7Jel3Us+lt/dnAgORvN1RxdgsD7cemY="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css.gz",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\obj\\Debug\\net9.0\\compressed\\clo478q587-tlyw148y2o.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1350"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RAAa1QIZgvn5bnMtXiKb7Q7qyunv7Epd05heByLotOk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Nov 2024 13:35:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RAAa1QIZgvn5bnMtXiKb7Q7qyunv7Epd05heByLotOk="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.tlyw148y2o.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\obj\\Debug\\net9.0\\compressed\\clo478q587-tlyw148y2o.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0,000740192450"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1350"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RAAa1QIZgvn5bnMtXiKb7Q7qyunv7Epd05heByLotOk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Nov 2024 13:35:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"MahqEq3cni4P7Jel3Us+lt/dnAgORvN1RxdgsD7cemY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tlyw148y2o"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MahqEq3cni4P7Jel3Us+lt/dnAgORvN1RxdgsD7cemY="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.tlyw148y2o.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5794"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MahqEq3cni4P7Jel3Us+lt/dnAgORvN1RxdgsD7cemY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Nov 2024 13:35:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3524,7 +3745,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4a2voe3zqh"
+          "Value": "tlyw148y2o"
         },
         {
           "Name": "label",
@@ -3532,13 +3753,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-tOJP/xSQy3LAzAxgx+RbuOXG8ZbD/uPHFao6ksXP28o="
+          "Value": "sha256-MahqEq3cni4P7Jel3Us+lt/dnAgORvN1RxdgsD7cemY="
         }
       ]
     },
     {
-      "Route": "css/site.4a2voe3zqh.css.gz",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\obj\\Debug\\net9.0\\compressed\\clo478q587-4a2voe3zqh.gz",
+      "Route": "css/site.tlyw148y2o.css.gz",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\obj\\Debug\\net9.0\\compressed\\clo478q587-tlyw148y2o.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3547,7 +3768,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1266"
+          "Value": "1350"
         },
         {
           "Name": "Content-Type",
@@ -3555,11 +3776,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"AKVo8eROXTanCu+c2rS8YFZwC1K4x+glSJUa1XjB5Ho=\""
+          "Value": "\"RAAa1QIZgvn5bnMtXiKb7Q7qyunv7Epd05heByLotOk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Oct 2024 11:41:00 GMT"
+          "Value": "Sat, 02 Nov 2024 13:35:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3577,7 +3798,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4a2voe3zqh"
+          "Value": "tlyw148y2o"
         },
         {
           "Name": "label",
@@ -3585,144 +3806,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-AKVo8eROXTanCu+c2rS8YFZwC1K4x+glSJUa1XjB5Ho="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\obj\\Debug\\net9.0\\compressed\\clo478q587-4a2voe3zqh.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0,000789265983"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1266"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"AKVo8eROXTanCu+c2rS8YFZwC1K4x+glSJUa1XjB5Ho=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 31 Oct 2024 11:41:00 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"tOJP/xSQy3LAzAxgx+RbuOXG8ZbD/uPHFao6ksXP28o=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-tOJP/xSQy3LAzAxgx+RbuOXG8ZbD/uPHFao6ksXP28o="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4013"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"tOJP/xSQy3LAzAxgx+RbuOXG8ZbD/uPHFao6ksXP28o=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 31 Oct 2024 11:41:00 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-tOJP/xSQy3LAzAxgx+RbuOXG8ZbD/uPHFao6ksXP28o="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css.gz",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\obj\\Debug\\net9.0\\compressed\\clo478q587-4a2voe3zqh.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1266"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"AKVo8eROXTanCu+c2rS8YFZwC1K4x+glSJUa1XjB5Ho=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 31 Oct 2024 11:41:00 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-AKVo8eROXTanCu+c2rS8YFZwC1K4x+glSJUa1XjB5Ho="
+          "Value": "sha256-RAAa1QIZgvn5bnMtXiKb7Q7qyunv7Epd05heByLotOk="
         }
       ]
     },
@@ -4021,6 +4105,334 @@
         {
           "Name": "integrity",
           "Value": "sha256-jcY0RXFOlcp4VNTCcYQtWVZZBlr+ZY+AOv6/0S5dnF8="
+        }
+      ]
+    },
+    {
+      "Route": "img/1st-book.jpg",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\img\\1st-book.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6867"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cIa+4dEnIrv3iT1bSmGD/V67akmqk/st/pu1QFaljnY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Nov 2024 11:41:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cIa+4dEnIrv3iT1bSmGD/V67akmqk/st/pu1QFaljnY="
+        }
+      ]
+    },
+    {
+      "Route": "img/1st-book.s934c9c2md.jpg",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\img\\1st-book.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6867"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cIa+4dEnIrv3iT1bSmGD/V67akmqk/st/pu1QFaljnY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Nov 2024 11:41:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s934c9c2md"
+        },
+        {
+          "Name": "label",
+          "Value": "img/1st-book.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cIa+4dEnIrv3iT1bSmGD/V67akmqk/st/pu1QFaljnY="
+        }
+      ]
+    },
+    {
+      "Route": "img/2nd-book.jpg",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\img\\2nd-book.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5787"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2Qkd8ne/yKxpLQVTSo5C5Ir/cmOCyY6RqNqAibk03WM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Nov 2024 11:41:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2Qkd8ne/yKxpLQVTSo5C5Ir/cmOCyY6RqNqAibk03WM="
+        }
+      ]
+    },
+    {
+      "Route": "img/2nd-book.lp83fjyoq8.jpg",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\img\\2nd-book.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5787"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2Qkd8ne/yKxpLQVTSo5C5Ir/cmOCyY6RqNqAibk03WM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Nov 2024 11:41:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lp83fjyoq8"
+        },
+        {
+          "Name": "label",
+          "Value": "img/2nd-book.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2Qkd8ne/yKxpLQVTSo5C5Ir/cmOCyY6RqNqAibk03WM="
+        }
+      ]
+    },
+    {
+      "Route": "img/3th-book.6br96p4nua.jpg",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\img\\3th-book.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10855"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fkN7BcYGzpTc92Nt/jaElAgKIF5yk6il5RosTU0G3RA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Nov 2024 11:41:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6br96p4nua"
+        },
+        {
+          "Name": "label",
+          "Value": "img/3th-book.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fkN7BcYGzpTc92Nt/jaElAgKIF5yk6il5RosTU0G3RA="
+        }
+      ]
+    },
+    {
+      "Route": "img/3th-book.jpg",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\img\\3th-book.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10855"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fkN7BcYGzpTc92Nt/jaElAgKIF5yk6il5RosTU0G3RA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Nov 2024 11:41:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fkN7BcYGzpTc92Nt/jaElAgKIF5yk6il5RosTU0G3RA="
+        }
+      ]
+    },
+    {
+      "Route": "img/6884840.0nq04mbd27.jpg",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\img\\6884840.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1433998"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JO1RTyxZVuLXzlEu2FT36VsYdgfbHhAq1a9q6Omq7Ng=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Feb 2022 03:23:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0nq04mbd27"
+        },
+        {
+          "Name": "label",
+          "Value": "img/6884840.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JO1RTyxZVuLXzlEu2FT36VsYdgfbHhAq1a9q6Omq7Ng="
+        }
+      ]
+    },
+    {
+      "Route": "img/6884840.jpg",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\img\\6884840.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1433998"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JO1RTyxZVuLXzlEu2FT36VsYdgfbHhAq1a9q6Omq7Ng=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Feb 2022 03:23:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JO1RTyxZVuLXzlEu2FT36VsYdgfbHhAq1a9q6Omq7Ng="
         }
       ]
     },

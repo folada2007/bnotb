@@ -3,12 +3,16 @@ using BooksNotBoobs.Domain.Entities;
 using BooksNotBoobs.Domain.Factory;
 using BooksNotBoobs.Domain.Interfaces;
 using BooksNotBoobs.Domain.Services;
+using BooksNotBoobs.Interfaces;
+using BooksNotBoobs.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+builder.Services.AddScoped<IUrlImgService, UrlImgService>();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<IBookFactory,BookFactory>();
 builder.Services.AddScoped<IBookRepository, BookRepository>();

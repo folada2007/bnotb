@@ -6,17 +6,17 @@
         <h1>SignIn</h1>
     </div>
 
-    <div class="loginForm d-flex justify-content-center align-items-center">
-        <form class="loginForm d-flex flex-column align-items-center" asp-area="" asp-action="Login" asp-controller="Login" method="post">
+    <div class="registrForm d-flex align-items-center">
+        <form asp-area="" asp-action="Login" asp-controller="Login" method="post">
             <div asp-validation-summary="ModelOnly"></div>
-            <div class="mb-3 d-flex flex-column">
+            <div>
                 <span class="text-danger" asp-validation-for="Email"></span>
-                <input asp-for="Email" class="registrInput" type="email" value="" placeholder="email" />
+                <input asp-for="Email" class="RegInput" type="email" value="" placeholder="email" />
             </div>
 
-            <div class="mb-3 d-flex flex-column">
+            <div>
                 <span class="text-danger" asp-validation-for="Password"></span>
-                <input asp-for="Password" class="registrInput" type="password" value="" placeholder="password" />
+                <input asp-for="Password" class="RegInput" type="password" value="" placeholder="password" />
             </div>
 
             <button type="submit" class="registrButton">Отправить</button>

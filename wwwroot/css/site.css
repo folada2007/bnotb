@@ -104,33 +104,6 @@ body {
     }
 }
 
-.registrForm,.loginForm {
-    min-width:354px;
-}
-
-.registrInput {
-    padding-left:10px;
-    border-radius:20px;
-    box-shadow: 0px -5px 8px 0px rgba(0, 0, 0, 0.2) inset;
-    border: none;
-    width: 500px;
-}
-
-@media(orientation:portrait) {
-
-    .registrInput {
-        width: 100%;
-    }
-}
-
-.registrContent {
-    flex-wrap:wrap;
-}
-
-.registrButton {
-    border-radius: 20px;
-    background-color: rgba(247, 196, 244, 0.2);
-}
 
 .shelf {
     width:100%;
@@ -216,7 +189,119 @@ body {
     animation: fadeIn 0.8s ease-in-out;
 }
 
-.bookadd {
-    border:1px,solid,black;
-    width:max-content;
+.collection-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: max-content;
+}
+
+.btm, .size {
+    padding: 0px;
+    margin: 0px;
+    max-width: 15px;
+    border: none;
+}
+
+.BookButton .btm {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.BookButton .btm .size {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.BookButton .btm:hover .size {
+    transform: scale(1.1); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.BookButton .btm:active .size {
+    transform: scale(1.05);
+}
+
+.registrForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.registrForm form {
+    margin-top:40px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.registrForm form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.RegInput {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+RegInput:focus {
+    border-color: #6772e5;
+    box-shadow: 0 0 5px rgba(103, 114, 229, 0.5);
+}
+
+.registrButton {
+    padding: 12px 20px;
+    border: none;
+    background-color: #6772e5;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+}
+
+.registrForm button:hover {
+    background-color: #5469d4;
+    transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.registrForm form {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@media(orientation: portrait) {
+    .registrContent {
+        flex-direction:column;
+        justify-content:normal;
+    }
+    .registrForm {
+        width:100%;
+    }
 }

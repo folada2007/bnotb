@@ -62,6 +62,10 @@ C:\Users\ASUS\source\repos\BooksNotBoobs\BooksNotBoobs\wwwroot\lib\bootstrap\dis
 C:\Users\ASUS\source\repos\BooksNotBoobs\BooksNotBoobs\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\img\1st-book.jpg
+wwwroot\img\2nd-book.jpg
+wwwroot\img\3th-book.jpg
+wwwroot\img\6884840.jpg
 wwwroot\img\cute-cat-border.png
 wwwroot\img\Enter.png
 wwwroot\img\result_infoBook.png
