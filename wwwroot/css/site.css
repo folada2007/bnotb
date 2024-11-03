@@ -104,89 +104,10 @@ body {
     }
 }
 
-
 .shelf {
     width:100%;
     border:1px,solid,black;
     display:block;
-}
-
-
-.AddBook {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: Arial, sans-serif;
-}
-
-.AddBook form {
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    transition: transform 0.2s ease, box-shadow 0.3s ease;
-}
-
-.AddBook form:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-}
-
-
-.AddBook input[type="text"],
-.AddBook input[type="number"],
-.AddBook textarea {
-    width: 100%;
-    padding: 12px 15px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    outline: none;
-}
-
-.AddBook input[type="text"]:focus,
-.AddBook input[type="number"]:focus,
-.AddBook textarea:focus {
-    border-color: #6772e5;
-    box-shadow: 0 0 5px rgba(103, 114, 229, 0.5);
-}
-
-.pushButton {
-    padding: 12px 20px;
-    border: none;
-    background-color: #6772e5;
-    color: #fff;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    font-weight: bold;
-}
-
-.AddBook button:hover {
-    background-color: #5469d4;
-    transform: translateY(-2px);
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.AddBook form {
-    animation: fadeIn 0.8s ease-in-out;
 }
 
 .collection-content {
@@ -223,34 +144,42 @@ body {
     transform: scale(1.05);
 }
 
-.registrForm {
+.registrContent,
+.LoginContent,
+.AddBook{
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
 }
 
-.registrForm form {
-    margin-top:40px;
+.registrForm,
+.LoginForm,
+.FormBook {
+    margin-top: 40px;
     background-color: #fff;
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    width: 400px;
+    max-width: 100%;
+    width:600px;
     display: flex;
     flex-direction: column;
     gap: 15px;
     transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
-.registrForm form:hover {
+.registrForm:hover,
+.LoginForm:hover,
+.FormBook:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);/*pometka*/
 }
 
 
-.RegInput {
+.RegInput,
+.LogInput,
+.InputBook {
     width: 100%;
     padding: 12px 15px;
     border-radius: 8px;
@@ -259,12 +188,16 @@ body {
     outline: none;
 }
 
-RegInput:focus {
+.RegInput:focus,
+.LogInput:focus,
+.InputBook:focus{
     border-color: #6772e5;
     box-shadow: 0 0 5px rgba(103, 114, 229, 0.5);
 }
 
-.registrButton {
+.registrButton,
+.LogButton,
+.pushButton {
     padding: 12px 20px;
     border: none;
     background-color: #6772e5;
@@ -275,7 +208,9 @@ RegInput:focus {
     font-weight: bold;
 }
 
-.registrForm button:hover {
+.registrButton:hover,
+.LogButton:hover,
+.pushButton:hover {
     background-color: #5469d4;
     transform: translateY(-2px);
 }
@@ -292,16 +227,25 @@ RegInput:focus {
     }
 }
 
-.registrForm form {
+.registrForm,
+.LoginForm,
+.FormBook {
     animation: fadeIn 0.8s ease-in-out;
 }
 
 @media(orientation: portrait) {
-    .registrContent {
-        flex-direction:column;
-        justify-content:normal;
+    .registrContent,
+    .LoginContent,
+    .AddBook {
+        flex-direction: column;
+        justify-content: normal;
     }
-    .registrForm {
-        width:100%;
+    .registrContent,
+    .LoginContent,
+    .AddBook {
+        width: 100%;
     }
 }
+
+
+

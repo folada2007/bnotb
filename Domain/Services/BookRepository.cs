@@ -34,6 +34,7 @@ namespace BooksNotBoobs.Domain.Services
 
         private void CreateField(Book book) 
         {
+            book.Area ??= "";
             book.UrlImg = _UrlImgService.GetRandomUrl();
             book.Id = Guid.NewGuid().ToString();
             var UserID = _httpContext.HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);

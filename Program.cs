@@ -12,46 +12,41 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 
+builder.Services.AddScoped<IUserFactory, UserFactory>();
+builder.Services.AddScoped<IUSerRepository, UserRepository>();
 builder.Services.AddScoped<IUrlImgService, UrlImgService>();
 builder.Services.AddHttpContextAccessor();
-builder.Services.AddScoped<IBookFactory,BookFactory>();
+builder.Services.AddScoped<IBookFactory, BookFactory>();
 builder.Services.AddScoped<IBookRepository, BookRepository>();
 builder.Services.AddScoped<IAuthService, AuthService>();
-builder.Services.AddAuthorization();
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-    .AddCookie(options => 
-    {
-        options.Cookie.Name = "UserState";
-        options.Cookie.HttpOnly = true;
-        options.ExpireTimeSpan = TimeSpan.FromMinutes(60);
-    });
-builder.Services.AddScoped<IUserFactory, UserFactory>();
-builder.Services.AddScoped<IUSerRepository,UserRepository>();
+
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-builder.Services.AddIdentity<User,IdentityRole>()
+builder.Services.AddIdentity<User, IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultTokenProviders();
-
+builder.Services.ConfigureApplicationCookie(options => 
+{
+    options.LoginPath = "/Login/Index";
+    options.LogoutPath = "/Login/LogOut";
+    options.Cookie.Name = "UserAuthenticated";
+    options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
+});
+builder.Services.AddAuthentication();
+builder.Services.AddAuthorization();
 
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
-}
-
 app.UseHttpsRedirection();
+app.UseStaticFiles();
+
 app.UseRouting();
 
-app.UseAuthorization();
 app.UseAuthentication();
-
-app.UseStaticFiles();
+app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",

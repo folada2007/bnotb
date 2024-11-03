@@ -2,9 +2,11 @@
 using BooksNotBoobs.DTOs;
 using BooksNotBoobs.Domain.Interfaces;
 using BooksNotBoobs.Domain.Factory;
+using Microsoft.AspNetCore.Authorization;
 
-namespace BooksNotBoobs.Controllers.Bookshelf
+namespace BooksNotBoobs.Controllers
 {
+    [Authorize]
     public class BookshelfController : Controller
     {
         private readonly IBookRepository _bookRepository;
@@ -28,17 +30,17 @@ namespace BooksNotBoobs.Controllers.Bookshelf
             {
                 var result = _bookFactory.CreateBook(book);
                 var trueORno = await _bookRepository.CheckDuplicate(result);
-                if (trueORno) 
+                if (trueORno)
                 {
-                    ModelState.AddModelError(string.Empty,"Такая книга уже есть");
-                    return View("SetBooks",book);
+                    ModelState.AddModelError(string.Empty, "Такая книга уже есть");
+                    return View("SetBooks", book);
                 }
                 await _bookRepository.AddBookAsync(result);
             }
             return View("SetBooks", book);
         }
 
-        public async Task<IActionResult> Index() 
+        public async Task<IActionResult> Index()
         {
             var AllBook = await _bookRepository.GetAlBookAsync();
 

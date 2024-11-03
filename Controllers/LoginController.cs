@@ -2,13 +2,13 @@
 using BooksNotBoobs.DTOs;
 using BooksNotBoobs.Domain.Interfaces;
 
-namespace BooksNotBoobs.Controllers.Authentication
+namespace BooksNotBoobs.Controllers
 {
     public class LoginController : Controller
     {
         private readonly IAuthService _authService;
 
-        public LoginController(IAuthService authService) 
+        public LoginController(IAuthService authService)
         {
             _authService = authService;
         }
@@ -19,26 +19,26 @@ namespace BooksNotBoobs.Controllers.Authentication
         }
 
         [HttpPost]
-        public async Task<IActionResult> Login(LoginDTO login) 
+        public async Task<IActionResult> Login(LoginDTO login)
         {
-            if (ModelState.IsValid) 
+            if (ModelState.IsValid)
             {
-                var result = await _authService.SignInAsync(login.Email,login.Password);
-                if (result) 
+                var result = await _authService.SignInAsync(login.Email, login.Password);
+                if (result)
                 {
                     return RedirectToAction("Index", "Home");
                 }
-                
-                ModelState.AddModelError(string.Empty,"User not found");
-               
+
+                ModelState.AddModelError(string.Empty, "User not found");
+
             }
             return View("Index");
         }
 
-        public IActionResult LogOut() 
+        public IActionResult LogOut()
         {
             _authService.SignOutAsync();
-            return RedirectToAction("Index","Home");
+            return RedirectToAction("Index", "Home");
         }
 
     }

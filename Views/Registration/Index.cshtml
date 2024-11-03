@@ -5,30 +5,30 @@
 
     <img class="bookImg" src="~/img/cute-cat-border.png" alt="Alternate Text" />
 
-    <div class="registrForm d-flex align-items-center">
-        <form asp-action="CheckRegistrForm" asp-controller="Registration" asp-area="" method="post">
+    <div class="registrContent d-flex align-items-center">
+        <form class="registrForm" asp-action="CheckRegistrForm" asp-controller="Registration" asp-area="" method="post">
 
             <h1 class="text-center">Registration</h1>
 
         <div asp-validation-summary="ModelOnly"></div>
         <div>
             <span class="text-danger" asp-validation-for="UserName"></span>
-                <input class="RegInput" asp-for="UserName" type="text" placeholder="User Name" />
+            <input class="RegInput" asp-for="UserName" type="text" placeholder="User Name" />
         </div>
 
         <div>
             <span class="text-danger" asp-validation-for="UserEmail"></span>
-                <input class="RegInput" asp-for="UserEmail" type="text" placeholder="Email" />
+            <input class="RegInput" asp-for="UserEmail" type="text" placeholder="Email" />
         </div>
 
         <div>
             <span class="text-danger" asp-validation-for="Password"></span>
-                <input class="RegInput" asp-for="Password" type="password" placeholder="Password" />
+            <input class="RegInput" asp-for="Password" type="password" placeholder="Password" />
         </div>
 
          <div>
             <span class="text-danger" asp-validation-for="ConfirmPassword"></span>
-                <input class="RegInput" asp-for="ConfirmPassword" type="password" placeholder="Confirm Password" />
+            <input class="RegInput" asp-for="ConfirmPassword" type="password" placeholder="Confirm Password" />
         </div>
 
             <button class="registrButton">push</button>
