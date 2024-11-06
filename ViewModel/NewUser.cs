@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace BooksNotBoobs.DTOs
+namespace BooksNotBoobs.ViewModel
 {
     public class NewUser
     {

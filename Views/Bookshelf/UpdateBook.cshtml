@@ -1,0 +1,32 @@
+﻿@using BooksNotBoobs.DTOs
+@model UpdateDTO
+
+<h1 class="text-center">New Book</h1>
+<div class="AddBook">
+    <div class="AddBook">
+        <form class="FormBook" asp-action="UpdateBook" asp-controller="Bookshelf" asp-area="" method="post">
+            <div asp-validation-summary="ModelOnly"></div>
+            <div>
+                <span class="text-danger" asp-validation-for="@Model.NewBook.BookName"></span>
+                <input class="InputBook" asp-for="@Model.NewBook.BookName" type="text" placeholder="BookName" value="@Model.Book.BookName" />
+            </div>
+
+            <div>
+                <span class="text-danger" asp-validation-for="@Model.NewBook.Author"></span>
+                <input class="InputBook" asp-for="@Model.NewBook.Author" type="text" placeholder="Author" value="@Model.Book.Author" />
+            </div>
+
+            <div>
+                <textarea class="InputBook" asp-for="@Model.NewBook.Area" placeholder="emotion">@Model.Book.Area</textarea>
+            </div>
+
+            <div>
+                <span class="text-danger" asp-validation-for="@Model.NewBook.Point"></span>
+                <input class="InputBook" asp-for="@Model.NewBook.Point" type="number" placeholder="Point" value="@Model.Book.Point" />
+            </div>
+
+
+            <button class="pushButton">push</button>
+        </form>
+    </div>
+</div>

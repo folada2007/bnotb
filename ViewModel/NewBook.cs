@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace BooksNotBoobs.DTOs
+namespace BooksNotBoobs.ViewModel
 {
     public class NewBook
     {
@@ -8,11 +8,11 @@ namespace BooksNotBoobs.DTOs
         public string BookName { get; set; }
 
         [Required(ErrorMessage = "Author is required")]
-        public string Author {  get; set; }
+        public string Author { get; set; }
         public string? Area { get; set; }
 
-        [Range(1,5,ErrorMessage ="Поставьте оценку от 1 до 5")]
+        [Range(1, 5, ErrorMessage = "Поставьте оценку от 1 до 5")]
         [Required(ErrorMessage = "Point is required")]
-        public int Point {  get; set; }
+        public int Point { get; set; }
     }
 }

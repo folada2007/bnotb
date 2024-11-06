@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using BooksNotBoobs.DTOs;
 using Microsoft.AspNetCore.Identity;
 using BooksNotBoobs.Domain.Interfaces;
 using BooksNotBoobs.Domain.Factory;
+using BooksNotBoobs.ViewModel;
 
 namespace BooksNotBoobs.Controllers
 {

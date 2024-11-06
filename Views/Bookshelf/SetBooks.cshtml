@@ -1,4 +1,4 @@
-﻿@using BooksNotBoobs.DTOs
+﻿@using BooksNotBoobs.ViewModel
 @model NewBook
 
 <h1 class="text-center">New Book</h1>
@@ -22,7 +22,7 @@
 
             <div>
                 <span class="text-danger" asp-validation-for="Point"></span>
-                <input class="InputBook" asp-for="Point" type="number" />
+                <input class="InputBook" asp-for="Point" type="number" placeholder="Point" />
             </div>
 
 

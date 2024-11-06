@@ -225,5 +225,5 @@ C:\Users\ASUS\source\repos\BooksNotBoobs\BooksNotBoobs\obj\Debug\net9.0\compress
 C:\Users\ASUS\source\repos\BooksNotBoobs\BooksNotBoobs\obj\Debug\net9.0\compressed\3vjgkd8cbh-m9qm4tazc0.gz
 C:\Users\ASUS\source\repos\BooksNotBoobs\BooksNotBoobs\obj\Debug\net9.0\compressed\vivlwreyiw-jjsuc0puko.gz
 C:\Users\ASUS\source\repos\BooksNotBoobs\BooksNotBoobs\obj\Debug\net9.0\compressed\clpd2dqkvm-9vr69e8ynj.gz
-C:\Users\ASUS\source\repos\BooksNotBoobs\BooksNotBoobs\obj\Debug\net9.0\compressed\clo478q587-64fwxmjyej.gz
 C:\Users\ASUS\source\repos\BooksNotBoobs\BooksNotBoobs\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\ASUS\source\repos\BooksNotBoobs\BooksNotBoobs\obj\Debug\net9.0\compressed\clo478q587-2bmi4ppxjw.gz

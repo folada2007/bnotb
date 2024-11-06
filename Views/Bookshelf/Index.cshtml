@@ -1,11 +1,31 @@
-﻿@using BooksNotBoobs.Controllers
-@using BooksNotBoobs.Domain.Entities
-@model List<Book>
+﻿@using BooksNotBoobs.DTOs
+@model ShelfDto
+
+<div class="collection-navbar text-center">
+    <h1>Welcome to your personal library</h1>
+
+    <form class="SearchForm" asp-action="Index" asp-controller="Bookshelf" method="get">
+        <input class="search" type="text" name="Search" />
+        <button class="SearchButton" type="submit">click</button>
+    </form>
+
+    <div class="dropdown">
+
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            Change move
+        </a>
+
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" asp-action="Remove" asp-controller="Bookshelf">Remove</a></li>
+            <li><a class="dropdown-item" asp-action="SetBooks" asp-controller="Bookshelf">Add</a></li>
+        </ul>
+    </div>
+</div>
 
 <div class="collection-content">
-    @for (int i = 0; i < Model.Count; i++)
+    @for (int i = 0; i < Model.books.Count; i++)
     {
-        var item = Model[i];
+        var item = Model.books[i];
         var modalId = "exampleModal" + i;
 
         <div class="bookAdd d-flex flex-column justify-content-end">
@@ -14,9 +34,8 @@
                 <button type="button" class="btm" data-bs-toggle="modal" data-bs-target="#@modalId">
                     <img class="size" src="@Url.Content(item.UrlImg)" alt="Alternate Text" />
                 </button>
-            </div>
+            </div>      
            
-
             <div class="modal fade" id="@modalId" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                     <div class="modal-content">
@@ -30,14 +49,16 @@
                             &copy; 2024 - BooksNotBoobs - @item.Author
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <form asp-action="UpdateBook" asp-controller="Bookshelf" method="get">
+                                <input type="hidden" name="Id" value="@item.Id" />
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary">Edit</button>
+                            </form>
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     }
-    <a class="plus-link" asp-action="SetBooks" asp-controller="Bookshelf">+</a>
 </div>
-

@@ -24,8 +24,16 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NoZWxmXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ASUS/source/repos/BooksNotBoobs/BooksNotBoobs/Views/Bookshelf/Remove.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NoZWxmXFJlbW92ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ASUS/source/repos/BooksNotBoobs/BooksNotBoobs/Views/Bookshelf/SetBooks.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NoZWxmXFNldEJvb2tzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/source/repos/BooksNotBoobs/BooksNotBoobs/Views/Bookshelf/UpdateBook.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NoZWxmXFVwZGF0ZUJvb2suY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ASUS/source/repos/BooksNotBoobs/BooksNotBoobs/Views/Home/Index.cshtml]

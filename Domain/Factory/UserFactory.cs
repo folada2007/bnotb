@@ -1,5 +1,5 @@
 ﻿using BooksNotBoobs.Domain.Entities;
-using BooksNotBoobs.DTOs;
+using BooksNotBoobs.ViewModel;
 
 namespace BooksNotBoobs.Domain.Factory
 {

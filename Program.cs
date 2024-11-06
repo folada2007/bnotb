@@ -3,15 +3,18 @@ using BooksNotBoobs.Domain.Entities;
 using BooksNotBoobs.Domain.Factory;
 using BooksNotBoobs.Domain.Interfaces;
 using BooksNotBoobs.Domain.Services;
+using BooksNotBoobs.Factory;
 using BooksNotBoobs.Interfaces;
 using BooksNotBoobs.Services;
-using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession();
+builder.Services.AddScoped<IUpdateFactory, UpdateFactory>();
+builder.Services.AddScoped<IShelfFactory, ShelfFactory>();
 builder.Services.AddScoped<IUserFactory, UserFactory>();
 builder.Services.AddScoped<IUSerRepository, UserRepository>();
 builder.Services.AddScoped<IUrlImgService, UrlImgService>();
@@ -32,6 +35,7 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
     options.Cookie.HttpOnly = true;
     options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
+    options.SlidingExpiration = true;
 });
 builder.Services.AddAuthentication();
 builder.Services.AddAuthorization();
@@ -47,7 +51,7 @@ app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
-
+app.UseSession();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}"

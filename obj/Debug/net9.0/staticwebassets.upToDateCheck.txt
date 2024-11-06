@@ -66,11 +66,11 @@ wwwroot\img\1st-book.jpg
 wwwroot\img\2nd-book.jpg
 wwwroot\img\3th-book.jpg
 wwwroot\img\6884840.jpg
+wwwroot\img\book.png
 wwwroot\img\cute-cat-border.png
 wwwroot\img\Enter.png
 wwwroot\img\result_infoBook.png
 wwwroot\img\twitter.png
-wwwroot\img\xray.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

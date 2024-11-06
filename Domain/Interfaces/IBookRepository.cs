@@ -5,10 +5,11 @@ namespace BooksNotBoobs.Domain.Interfaces
     public interface IBookRepository
     {
         Task AddBookAsync(Book book);
-        Task DeleteBookAsync(Book book);
+        Task DeleteBookAsync(string book);
         Task<Book> GetBookById(string id);
         Task<List<Book>> GetAlBookAsync();
-        Task<bool> CheckDuplicate(Book book);
-
+        Task<bool> CheckDuplicate(string book);
+        Task<List<Book>> FindByName(string book);
+        Task<bool> EditBookAsync(Book book,string id);
     }
 }

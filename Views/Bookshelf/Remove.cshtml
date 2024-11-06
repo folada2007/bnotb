@@ -1,0 +1,17 @@
+﻿@using BooksNotBoobs.DTOs
+@model BookNameDTO
+
+<h1 class="text-center">Remove Book</h1>
+<div class="AddBook">
+    <div class="AddBook">
+        <form class="FormBook" asp-action="Remove" asp-controller="Bookshelf" asp-area="" method="post">
+            <div asp-validation-summary="ModelOnly"></div>
+            <div>
+                <span class="text-danger" asp-validation-for="BookName"></span>
+                <input class="InputBook" asp-for="BookName" type="text" placeholder="BookName" />
+            </div>
+
+            <button class="pushButton">push</button>
+        </form>
+    </div>
+</div>

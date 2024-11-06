@@ -20,9 +20,9 @@ namespace BooksNotBoobs.Domain.Services
             _context = context;
         }
 
-        public async Task<bool> CheckDuplicate(Book book) 
+        public async Task<bool> CheckDuplicate(string book) 
         {
-            var bookName = await _context.Books.FirstOrDefaultAsync(c => c.BookName == book.BookName);
+            var bookName = await _context.Books.FirstOrDefaultAsync(c => c.BookName == book);
 
             return bookName != null;
         }
@@ -50,18 +50,43 @@ namespace BooksNotBoobs.Domain.Services
 
         public async Task<Book> GetBookById(string id) 
         {
-            var resultFind = await _context.Books.FindAsync(id);
-            return resultFind;
+            return await _context.Books.FindAsync(id);
         }
 
-        public async Task DeleteBookAsync(Book book) 
+        public async Task DeleteBookAsync(string book) 
         {
-            var resultFind = await GetBookById(book.Id);
+            var resultFind = await _context.Books.FirstOrDefaultAsync(c => c.BookName == book);
             if (resultFind != null) 
             {
                 _context.Books.Remove(resultFind);
                 await _context.SaveChangesAsync();
             }
         }
+
+        public async Task<List<Book>> FindByName(string book) 
+        {
+            return await _context.Books
+                .Where(c => c.BookName == book)
+                .ToListAsync();
+        }
+
+        public async Task<bool> EditBookAsync(Book book, string id) 
+        {
+            var currentBook = await GetBookById(id);
+
+            if (currentBook == null) 
+            {
+                return false;
+            }
+            currentBook.Area = string.IsNullOrEmpty(currentBook.Area) ? "" : book.Area ;
+            currentBook.Author = book.Author;
+            currentBook.BookName = book.BookName;
+            currentBook.Point = book.Point;
+            
+            _context.Books.Update(currentBook);
+            await _context.SaveChangesAsync();
+            return true;
+        }
+
     }
 }

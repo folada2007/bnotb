@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\img\\Enter.png"
     },
     {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\img\\book.png",
+      "PackagePath": "staticwebassets\\img\\book.png"
+    },
+    {
       "Id": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\img\\cute-cat-border.png",
       "PackagePath": "staticwebassets\\img\\cute-cat-border.png"
     },
@@ -43,10 +47,6 @@
     {
       "Id": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\img\\twitter.png",
       "PackagePath": "staticwebassets\\img\\twitter.png"
-    },
-    {
-      "Id": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\img\\xray.png",
-      "PackagePath": "staticwebassets\\img\\xray.png"
     },
     {
       "Id": "C:\\Users\\ASUS\\source\\repos\\BooksNotBoobs\\BooksNotBoobs\\wwwroot\\js\\site.js",
