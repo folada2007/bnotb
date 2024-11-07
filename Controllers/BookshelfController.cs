@@ -1,10 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using BooksNotBoobs.Domain.Interfaces;
-using BooksNotBoobs.Domain.Factory;
 using Microsoft.AspNetCore.Authorization;
 using BooksNotBoobs.ViewModel;
 using BooksNotBoobs.DTOs;
-using BooksNotBoobs.Factory;
+using BooksNotBoobs.Interfaces;
 
 namespace BooksNotBoobs.Controllers
 {
@@ -12,15 +11,11 @@ namespace BooksNotBoobs.Controllers
     public class BookshelfController : Controller
     {
         private readonly IBookRepository _bookRepository;
-        private readonly IBookFactory _bookFactory;
-        private readonly IShelfFactory _shelfFactory;
-        private readonly IUpdateFactory _updateFactory;
+        private readonly IBookFactoryService _bookFactoryService;
 
-        public BookshelfController(IUpdateFactory updateFactory,IBookRepository bookRepository, IBookFactory bookFactory, IShelfFactory shelfFactory)
+        public BookshelfController(IBookRepository bookRepository, IBookFactoryService bookFactoryService)
         {
-            _updateFactory = updateFactory;
-            _shelfFactory = shelfFactory;
-            _bookFactory = bookFactory;
+            _bookFactoryService = bookFactoryService;
             _bookRepository = bookRepository;
         }
 
@@ -34,9 +29,9 @@ namespace BooksNotBoobs.Controllers
         {
             if (ModelState.IsValid)
             {
-                var result = _bookFactory.CreateBook(book);
-                var trueORno = await _bookRepository.CheckDuplicate(result.BookName);
-                if (trueORno)
+                var result = _bookFactoryService.CreateBook(book);
+                var Copy = await _bookRepository.CheckDuplicate(result.BookName);
+                if (Copy)
                 {
                     ModelState.AddModelError(string.Empty, "Такая книга уже есть");
                     return View("SetBooks", book);
@@ -51,7 +46,7 @@ namespace BooksNotBoobs.Controllers
             var AllBook = await _bookRepository.GetAlBookAsync();
             var SearchResult = await _bookRepository.FindByName(Search);
             var filter = string.IsNullOrEmpty(Search) ? AllBook : SearchResult;
-            var result = _shelfFactory.CreateFilter(filter);
+            var result = _bookFactoryService.CreateFilter(filter);
             return View(result);
         }
 
@@ -65,8 +60,7 @@ namespace BooksNotBoobs.Controllers
         {
             if (ModelState.IsValid) 
             {
-                var createdBook = _bookFactory.CreateBookNameOnly(bookNameDTO);
-
+                var createdBook = _bookFactoryService.CreateBookNameOnly(bookNameDTO);
                 await _bookRepository.DeleteBookAsync(createdBook.BookName);
                 return RedirectToAction("Index");
             }
@@ -77,7 +71,7 @@ namespace BooksNotBoobs.Controllers
         {
             HttpContext.Session.SetString("Book_id", Id);
             var book = await _bookRepository.GetBookById(Id);
-            var result = _updateFactory.CreateUpdateDto(book,null);
+            var result = _bookFactoryService.CreateUpdateDto(book,null);
             return View(result);
         }
 
@@ -85,8 +79,8 @@ namespace BooksNotBoobs.Controllers
         public async Task<IActionResult> UpdateBook(NewBook newBook) 
         {
             var bookID = HttpContext.Session.GetString("Book_id");
-            var book = _bookFactory.CreateBook(newBook);
-            var result = _updateFactory.CreateUpdateDto(book, null);
+            var book = _bookFactoryService.CreateBook(newBook);
+            var result = _bookFactoryService.CreateUpdateDto(book, null);
             if (ModelState.IsValid) 
             {
                 var Updater = await _bookRepository.EditBookAsync(book, bookID);
